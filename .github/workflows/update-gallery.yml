@@ -1,0 +1,34 @@
+name: Update Gallery
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'illustrations/**'
+      - 'surfaceandpattern/**'
+      - 'sketches/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Regenerate gallery-data.js
+        run: node build.js
+
+      - name: Commit updated gallery-data.js
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add gallery-data.js
+          git diff --staged --quiet || git commit -m "chore: auto-update gallery-data.js"
+          git push

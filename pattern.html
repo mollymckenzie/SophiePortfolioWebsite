@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophie McKenzie — Pattern</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="header-mount"></div>
+
+  <main>
+    <div id="gallery-mount"></div>
+  </main>
+
+  <footer>
+    <a href="mailto:sophiecmckenzie28@gmail.com">Contact</a>
+  </footer>
+
+  <script src="gallery-data.js"></script>
+  <script src="data.js"></script>
+  <script>
+    document.getElementById('header-mount').innerHTML = buildHeader('pattern');
+    document.getElementById('gallery-mount').innerHTML = buildGalleryGrid(PATTERNS, 'pattern');
+  </script>
+</body>
+</html>

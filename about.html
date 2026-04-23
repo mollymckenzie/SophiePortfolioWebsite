@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophie McKenzie — About</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="header-mount"></div>
+
+  <main>
+    <div class="about-content">
+      <div class="about-left">
+        <h1>Hi There!</h1>
+        <p class="about-text">Hello I am Sophie yay</p>
+      </div>
+      <div class="about-right">
+        <img src="bio/biopicture.jpeg" alt="Sophie McKenzie" class="about-photo">
+      </div>
+    </div>
+
+    <div class="about-cta">
+      <p>Interested in working with me?</p>
+      <a href="mailto:sophiecmckenzie28@gmail.com">Contact</a>
+    </div>
+  </main>
+
+  <script src="gallery-data.js"></script>
+  <script src="data.js"></script>
+  <script>
+    document.getElementById('header-mount').innerHTML = buildHeader('about');
+  </script>
+</body>
+</html>

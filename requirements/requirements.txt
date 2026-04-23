@@ -1,0 +1,17 @@
+How you can add photos:
+1. Add them to the existing corresponding folder
+2. IT MUST BE IN THE FORMAT: [title], [year] OR IMAGE WITHIN [title][number]
+  - it uses the title and year from the main photos to make the inner page
+  - IMAGE WITHIN tells it to put it inside the page of the picture from title, number is needed to tell the order and differntiate it from the others
+3 MUST BE IN THE FORMAT: .jpg, .jpeg, .png, .gif, YOUR WEIRD APPLE FILE TYPE (.heic) WILL NOT WORK
+4. Click ADD FILE -> UPLOAD FILES -> drag the correctly named images into the correct folders
+5. Click COMMIT CHANGES
+6. It can take a minute or two for the changes to show up, make sure to refresh  
+
+About Page:
+to edit the bio edit biotext.txt
+to change the picture remove biopicture.jpeg and add a new one with the same name
+
+Logo:
+To change the logo replace the image in the logos folder
+
