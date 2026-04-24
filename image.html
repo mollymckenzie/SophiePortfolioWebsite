@@ -23,52 +23,64 @@
   <script>
     var params = new URLSearchParams(window.location.search);
     var gallery = params.get('gallery');
-    var title = params.get('title');
 
-    var items = gallery === 'pattern' ? PATTERNS : ILLUSTRATIONS;
-    var withinMap = gallery === 'pattern' ? PATTERN_WITHIN : ILLUSTRATION_WITHIN;
-    var activeNav = gallery === 'pattern' ? 'pattern' : 'illustration';
+    document.getElementById('header-mount').innerHTML = buildHeader(gallery === 'pattern' ? 'pattern' : gallery === 'sketches' ? 'sketches' : 'illustration');
 
-    document.getElementById('header-mount').innerHTML = buildHeader(activeNav);
-
-    var image = null;
-    for (var i = 0; i < items.length; i++) {
-      if (items[i].title === title) {
-        image = items[i];
-        break;
-      }
-    }
-
-    if (!image) {
-      document.getElementById('content-mount').innerHTML =
-        '<div class="not-found">' +
-        '<p>Image not found.</p>' +
-        '<p><a href="index.html">Back to gallery</a></p>' +
-        '</div>';
-    } else {
-      document.title = 'Sophie McKenzie — ' + image.title;
-
-      var withinFiles = withinMap[image.title] || [];
-
-      var additionalHtml = '';
-      if (withinFiles.length > 0) {
-        var imgs = withinFiles.map(function (f) {
-          return '<img src="' + toSrc(f) + '" alt="' + escHtml(image.title) + ' detail" loading="lazy">';
-        }).join('\n    ');
-        additionalHtml =
-          '<div class="image-detail-additional">\n' +
-          '  <div class="additional-grid">\n' +
-          '    ' + imgs + '\n' +
-          '  </div>\n' +
+    if (gallery === 'sketches') {
+      var file = params.get('file');
+      if (!file || !file.startsWith('sketches/')) {
+        document.getElementById('content-mount').innerHTML =
+          '<div class="not-found"><p>Sketch not found.</p><p><a href="sketches.html">Back to sketches</a></p></div>';
+      } else {
+        document.getElementById('content-mount').innerHTML =
+          '<div class="image-detail">' +
+          '<img src="' + toSrc(file) + '" alt="Sketch" class="image-detail-main">' +
           '</div>';
       }
+    } else {
+      var title = params.get('title');
+      var items = gallery === 'pattern' ? PATTERNS : ILLUSTRATIONS;
+      var withinMap = gallery === 'pattern' ? PATTERN_WITHIN : ILLUSTRATION_WITHIN;
 
-      document.getElementById('content-mount').innerHTML =
-        '<div class="image-detail">\n' +
-        '  <h1 class="image-detail-title">' + escHtml(image.title) + '</h1>\n' +
-        '  <img src="' + toSrc(image.file) + '" alt="' + escHtml(image.title) + '" class="image-detail-main">\n' +
-        '  ' + additionalHtml + '\n' +
-        '</div>';
+      var image = null;
+      for (var i = 0; i < items.length; i++) {
+        if (items[i].title === title) {
+          image = items[i];
+          break;
+        }
+      }
+
+      if (!image) {
+        document.getElementById('content-mount').innerHTML =
+          '<div class="not-found">' +
+          '<p>Image not found.</p>' +
+          '<p><a href="index.html">Back to gallery</a></p>' +
+          '</div>';
+      } else {
+        document.title = 'Sophie McKenzie — ' + image.title;
+
+        var withinFiles = withinMap[image.title] || [];
+
+        var additionalHtml = '';
+        if (withinFiles.length > 0) {
+          var imgs = withinFiles.map(function (f) {
+            return '<img src="' + toSrc(f) + '" alt="' + escHtml(image.title) + ' detail" loading="lazy">';
+          }).join('\n    ');
+          additionalHtml =
+            '<div class="image-detail-additional">\n' +
+            '  <div class="additional-grid">\n' +
+            '    ' + imgs + '\n' +
+            '  </div>\n' +
+            '</div>';
+        }
+
+        document.getElementById('content-mount').innerHTML =
+          '<div class="image-detail">\n' +
+          '  <h1 class="image-detail-title">' + escHtml(image.title) + '</h1>\n' +
+          '  <img src="' + toSrc(image.file) + '" alt="' + escHtml(image.title) + '" class="image-detail-main">\n' +
+          '  ' + additionalHtml + '\n' +
+          '</div>';
+      }
     }
   </script>
 </body>

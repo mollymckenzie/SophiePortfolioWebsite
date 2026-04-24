@@ -43,9 +43,12 @@ function buildHeader(activePage) {
 function buildGalleryGrid(items, galleryType) {
   var itemsHtml = items.map(function (item) {
     if (galleryType === 'sketches') {
-      return '<div class="gallery-item-nolink">' +
-        '<img src="' + toSrc(item.file) + '" alt="Sketch" loading="lazy">' +
-        '</div>';
+      var sketchUrl = 'image.html?gallery=sketches&file=' + encodeURIComponent(item.file);
+      return '<a href="' + sketchUrl + '" class="gallery-item">\n' +
+        '  <div class="gallery-item-inner">\n' +
+        '    <img src="' + toSrc(item.file) + '" alt="Sketch" loading="lazy">\n' +
+        '  </div>\n' +
+        '</a>';
     }
     var detailUrl = 'image.html?gallery=' + encodeURIComponent(galleryType) +
       '&title=' + encodeURIComponent(item.title);

@@ -182,7 +182,7 @@ main {
 .about-content {
   display: grid;
   grid-template-columns: 1fr 300px;
-  gap: 64px;
+  gap: 32px;
   align-items: start;
 }
 
@@ -219,15 +219,15 @@ main {
 }
 
 .about-cta p {
-  font-size: 0.875rem;
-  letter-spacing: 0.06em;
-  color: #666;
-  margin-bottom: 12px;
-  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1a1a1a;
+  margin-bottom: 16px;
 }
 
 .about-cta a {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #1a1a1a;
