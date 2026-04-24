@@ -184,7 +184,11 @@ main {
   grid-template-columns: 1fr 300px;
   gap: 64px;
   align-items: start;
-  max-width: 960px;
+}
+
+.about-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .about-left h1 {
@@ -209,11 +213,9 @@ main {
 }
 
 .about-cta {
-  margin-top: 72px;
-  padding-top: 36px;
+  padding: 36px 48px;
   border-top: 1px solid #e0e0e0;
   text-align: center;
-  max-width: 960px;
 }
 
 .about-cta p {
@@ -342,6 +344,10 @@ footer a:hover {
     gap: 40px;
   }
 
+  .about-cta {
+    padding: 28px;
+  }
+
   .image-detail {
     max-width: 100%;
   }
@@ -399,6 +405,6 @@ footer a:hover {
   }
 
   .about-cta {
-    margin-top: 40px;
+    padding: 24px 16px;
   }
 }
