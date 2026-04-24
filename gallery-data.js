@@ -94,28 +94,13 @@ var PATTERNS = [
     "year": "2026"
   },
   {
-    "file": "surfaceandpattern/Apple Juicy, 2026..png",
-    "title": "Apple Juicy",
-    "year": "2026"
-  },
-  {
     "file": "surfaceandpattern/Critter Bed Flat, 2026.PNG",
     "title": "Critter Bed Flat",
     "year": "2026"
   },
   {
-    "file": "surfaceandpattern/Critter Bed Mockup, 2026.png",
-    "title": "Critter Bed Mockup",
-    "year": "2026"
-  },
-  {
     "file": "surfaceandpattern/Flower Sheets, 2026..PNG",
     "title": "Flower Sheets",
-    "year": "2026"
-  },
-  {
-    "file": "surfaceandpattern/Pear Lady, 2026.PNG",
-    "title": "Pear Lady",
     "year": "2026"
   },
   {
@@ -125,7 +110,17 @@ var PATTERNS = [
   }
 ];
 
-var PATTERN_WITHIN = {};
+var PATTERN_WITHIN = {
+  "Apple Juicy Repeat": [
+    "surfaceandpattern/IMAGE WITHIN Apple Juicy Repeat1.png"
+  ],
+  "Critter Bed Flat": [
+    "surfaceandpattern/IMAGE WITHIN Critter Bed Flat1.png"
+  ],
+  "Pears Repeat": [
+    "surfaceandpattern/IMAGE WITHIN Pears Repeat1.PNG"
+  ]
+};
 
 var SKETCHES = [
   {
