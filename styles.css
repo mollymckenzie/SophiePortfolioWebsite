@@ -312,3 +312,93 @@ footer a:hover {
   color: #1a1a1a;
   text-decoration: underline;
 }
+
+/* ——— RESPONSIVE ——— */
+
+/* Tablet: 2-column gallery */
+@media (max-width: 900px) {
+  header {
+    padding: 24px 28px 0;
+  }
+
+  main {
+    padding: 24px 28px 48px;
+  }
+
+  footer {
+    padding: 28px 28px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo-img {
+    height: 90px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr 240px;
+    gap: 40px;
+  }
+
+  .image-detail {
+    max-width: 100%;
+  }
+}
+
+/* Mobile: 1-column gallery, stacked about */
+@media (max-width: 580px) {
+  header {
+    padding: 20px 16px 0;
+  }
+
+  main {
+    padding: 16px 16px 40px;
+  }
+
+  footer {
+    padding: 24px 16px;
+  }
+
+  .logo-img {
+    height: 72px;
+  }
+
+  nav {
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  nav a {
+    font-size: 0.75rem;
+    letter-spacing: 0.07em;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-right {
+    max-width: 280px;
+  }
+
+  .about-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .image-detail-title {
+    font-size: 1.75rem;
+  }
+
+  .about-cta {
+    margin-top: 40px;
+  }
+}
