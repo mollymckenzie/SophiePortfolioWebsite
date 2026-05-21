@@ -69,11 +69,6 @@ var ILLUSTRATIONS = [
     "year": "2026"
   },
   {
-    "file": "illustrations/Puppy Love, 2026..png",
-    "title": "Puppy Love",
-    "year": "2026"
-  },
-  {
     "file": "illustrations/Skeleton Flowers, 2025.PNG",
     "title": "Skeleton Flowers",
     "year": "2025"
@@ -177,11 +172,5 @@ var SKETCHES = [
   },
   {
     "file": "sketches/IMG_0717.PNG"
-  },
-  {
-    "file": "sketches/IMG_9153.heic"
-  },
-  {
-    "file": "sketches/IMG_9154.heic"
   }
 ];
