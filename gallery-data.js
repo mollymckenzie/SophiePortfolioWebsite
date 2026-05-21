@@ -34,14 +34,34 @@ var ILLUSTRATIONS = [
     "year": "2025"
   },
   {
+    "file": "illustrations/Critter Crew.jpeg",
+    "title": "Critter Crew",
+    "year": null
+  },
+  {
     "file": "illustrations/Fisherman, 2026..jpg",
     "title": "Fisherman",
     "year": "2026"
   },
   {
+    "file": "illustrations/Fishing.jpeg",
+    "title": "Fishing",
+    "year": null
+  },
+  {
     "file": "illustrations/Invasive Snails Poster, 2026.PNG",
     "title": "Invasive Snails Poster",
     "year": "2026"
+  },
+  {
+    "file": "illustrations/Leopard.jpeg",
+    "title": "Leopard",
+    "year": null
+  },
+  {
+    "file": "illustrations/Minnie.jpeg",
+    "title": "Minnie",
+    "year": null
   },
   {
     "file": "illustrations/PO Box Outerspace, 2026.PNG",
@@ -64,6 +84,11 @@ var ILLUSTRATIONS = [
     "year": "2026"
   },
   {
+    "file": "illustrations/Two Tigers.jpeg",
+    "title": "Two Tigers",
+    "year": null
+  },
+  {
     "file": "illustrations/Warby Parker, 2026..png",
     "title": "Warby Parker",
     "year": "2026"
@@ -84,6 +109,10 @@ var ILLUSTRATION_WITHIN = {
   ],
   "PO Box Outerspace": [
     "illustrations/IMAGE WITHIN PO Box outerspace.PNG"
+  ],
+  "Two Tigers": [
+    "illustrations/IMAGE WITHIN Two Tigers 2.jpeg",
+    "illustrations/IMAGE WITHIN Two Tigers.jpeg"
   ]
 };
 
@@ -102,6 +131,11 @@ var PATTERNS = [
     "file": "surfaceandpattern/Flower Sheets, 2026..PNG",
     "title": "Flower Sheets",
     "year": "2026"
+  },
+  {
+    "file": "surfaceandpattern/Flowers Repeat.png",
+    "title": "Flowers Repeat",
+    "year": null
   },
   {
     "file": "surfaceandpattern/Pears Repeat, 2026.PNG",
@@ -123,6 +157,15 @@ var PATTERN_WITHIN = {
 };
 
 var SKETCHES = [
+  {
+    "file": "sketches/21C06121-E63F-486A-B1BD-51C4BBF195CD_1_105_c.jpeg"
+  },
+  {
+    "file": "sketches/37DB1F8D-52FC-4995-BA09-2034A9DBA577_1_105_c.jpeg"
+  },
+  {
+    "file": "sketches/9257C92E-6D49-4FBF-AD30-774C4ADFE315_1_105_c.jpeg"
+  },
   {
     "file": "sketches/IMG_0611.PNG"
   },
