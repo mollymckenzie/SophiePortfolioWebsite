@@ -4,6 +4,11 @@ var CONTACT_HREF = 'mailto:sophiecmckenzie28@gmail.com';
 
 var ILLUSTRATIONS = [
   {
+    "file": "illustrations/Scuba Diving.png",
+    "title": "Scuba Diving",
+    "year": null
+  },
+  {
     "file": "illustrations/Aliens, 2025.PNG",
     "title": "Aliens",
     "year": "2025"

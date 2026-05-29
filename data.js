@@ -31,7 +31,7 @@ function buildHeader(activePage) {
 
   return '<header>\n' +
     '  <div class="header-top">\n' +
-    '    <img src="logos/IMG_1137.png" alt="Sophie McKenzie logo" class="logo-img">\n' +
+    '    <img src="logos/logo.png" alt="Sophie McKenzie logo" class="logo-img">\n' +
     '  </div>\n' +
     '  <nav>\n' +
     '    ' + links + '\n' +
