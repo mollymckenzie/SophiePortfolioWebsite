@@ -16,16 +16,16 @@ var ILLUSTRATIONS = [
     "thumb": "thumbs/illustrations/Bug Picnic, 2026.jpg"
   },
   {
-    "file": "illustrations/Aliens, 2025.PNG",
-    "title": "Aliens",
-    "year": "2025",
-    "thumb": "thumbs/illustrations/Aliens, 2025.jpg"
-  },
-  {
     "file": "illustrations/American Woodcock, 2026.PNG",
     "title": "American Woodcock",
     "year": "2026",
     "thumb": "thumbs/illustrations/American Woodcock, 2026.jpg"
+  },
+  {
+    "file": "illustrations/Aliens, 2025.PNG",
+    "title": "Aliens",
+    "year": "2025",
+    "thumb": "thumbs/illustrations/Aliens, 2025.jpg"
   },
   {
     "file": "illustrations/Apple Juicy.png",
