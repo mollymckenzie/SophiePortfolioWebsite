@@ -9,14 +9,19 @@ var ILLUSTRATIONS = [
     "year": null
   },
   {
-    "file": "illustrations/Aliens, 2025.PNG",
-    "title": "Aliens",
-    "year": "2025"
+    "file": "illustrations/Bug Picnic, 2026..PNG",
+    "title": "Bug Picnic",
+    "year": "2026"
   },
   {
     "file": "illustrations/American Woodcock, 2026.PNG",
     "title": "American Woodcock",
     "year": "2026"
+  },
+  {
+    "file": "illustrations/Aliens, 2025.PNG",
+    "title": "Aliens",
+    "year": "2025"
   },
   {
     "file": "illustrations/Bath Time, 2026..png",
@@ -26,11 +31,6 @@ var ILLUSTRATIONS = [
   {
     "file": "illustrations/Breakfast Party, 2026..png",
     "title": "Breakfast Party",
-    "year": "2026"
-  },
-  {
-    "file": "illustrations/Bug Picnic, 2026..PNG",
-    "title": "Bug Picnic",
     "year": "2026"
   },
   {
